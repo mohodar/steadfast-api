@@ -162,6 +162,7 @@ module.exports = (storedCredentials) => {
             securityId: row["Token"],
             expiryDate: row["Expiry"], // Send expiry date without parsing or formatting
             strikePrice: row["Strike"],
+            lotsize: row["Lotsize"],
           };
           if (row["Optiontype"] === "CE") {
             callStrikes.push(strikeData);

@@ -184,6 +184,7 @@ module.exports = (storedCredentials) => {
                   securityId: row["Token"],
                   expiryDate: row["Expiry"],
                   strikePrice: row["StrikePrice"],
+                  Lotsize: row["LotSize"],
                 };
                 if (row["OptionType"] === "CE") {
                   callStrikes.push(strikeData);
